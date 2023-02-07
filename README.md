@@ -3,19 +3,28 @@
 # TO-DO LIST
 
 1. Introductions
+
 2. Install Tools
+
 3. Create react app
+
 4. Create Git Repository
+
 5. List Products
+
    1. create Products array
    2. add products images
    3. render products
    4. style products
+
 6. Add Routing
+
    1. npm i react-router-dom
    2. create route for home screen
    3. create router for product screen
+
 7. Create Node.JS Server
+
    1. run npm init in root folder
    2. Update package.json set type:module
    3. Add .js to imports
@@ -28,13 +37,21 @@
    10. create route for /api/products
    11. return products
    12. run npm start
+
 8. Fetch Products from Backend
+
    1. set proxy in package.json
    2. npm install axious
    3. use state hook
    4. use effect hook
    5. use reducer hook
+
 9. Manage State by Reducer Hook
+
    1. define reducer
    2. update fetch data
-   3. get state from usReducer
+   3. get state from useReducer
+
+10. Add BootStrap UI Framework
+    1. npm install react-bootstrap bootstrap
+    2. update App.js

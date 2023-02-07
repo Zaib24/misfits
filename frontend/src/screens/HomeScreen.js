@@ -1,6 +1,5 @@
 import React, { useEffect, useReducer } from 'react';
 import { Link } from 'react-router-dom';
-import logger from 'use-reducer-logger';
 // import data from '../Data';
 import axios from 'axios';
 // Define requests
@@ -18,7 +17,7 @@ const reducer = (state, action) => {
 };
 function HomeScreen() {
   // use Reducer Hook
-  const [{ loading, error, products }, dispatch] = useReducer(logger(reducer), {
+  const [{ loading, error, products }, dispatch] = useReducer(reducer, {
     products: [],
     loading: true,
     error: '',
@@ -53,7 +52,7 @@ function HomeScreen() {
                 <img
                   src={product.image}
                   alt={product.name}
-                  style={{ height: '20rem' }}
+                  style={{ height: '25rem' }}
                 />
               </Link>
               <div className="product-info">

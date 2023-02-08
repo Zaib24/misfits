@@ -100,6 +100,11 @@
     3. Click Handler for Checkout
 
 18. Create Signin Screen
+
     1. Create Signin Form
     2. Add Email and Password
     3. Add Signin Button
+
+19. Connect MongoDB
+    1. Install local MongoDB database
+    2. Connect to MongoDB

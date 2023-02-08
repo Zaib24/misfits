@@ -1,6 +1,9 @@
 import express from 'express';
 import data from './Data.js';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const app = express();
 // Products API
 app.get('/api/products', (req, res) => {
@@ -29,3 +32,14 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`serve at http://localhost:${port}`);
 });
+
+// Connecting to MongoDB
+mongoose
+  .connect(process.env.MONGODB_URI)
+  .then(() => {
+    console.log('Connected to MongoDB.');
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+mongoose.set('strictQuery', true);

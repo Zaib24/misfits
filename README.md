@@ -76,7 +76,12 @@
     4. create utils.js to define getError Function
 
 14. Implement Add to Cart
+
     1. Create React Context
     2. Define Reducer
     3. Create store Provider
     4. Implement add to cart button click handler
+
+15. Complete Add to Cart
+    1. Check if item exists in cart
+    2. Check count in stock in backend

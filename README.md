@@ -83,5 +83,11 @@
     4. Implement add to cart button click handler
 
 15. Complete Add to Cart
+
     1. Check if item exists in cart
     2. Check count in stock in backend
+
+16. Create Cart Screen
+    1. Create 2 Columns
+    2. Display Items List
+    3. Create Action Column

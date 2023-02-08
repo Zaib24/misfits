@@ -12,7 +12,7 @@ body {
 main {
   flex: 1;
 }
-.btn-warning {
+.btn-gold {
   background-color: #f0c040;
   color: black;
 }
@@ -40,4 +40,7 @@ main {
 }
 .img-thumbnail {
   width: 30%;
+}
+.container-small {
+  max-width: 600px;
 }

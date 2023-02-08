@@ -1,0 +1,7 @@
+.container-small {
+  max-width: 600px;
+}
+.btn-warning {
+  background-color: #f0c040;
+  color: black;
+}

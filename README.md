@@ -94,6 +94,12 @@
     3. Create Action Column
 
 17. Complete Cart Screen
+
     1. Click Handler for inc/dec item
     2. Click Handler for Removing Item
     3. Click Handler for Checkout
+
+18. Create Signin Screen
+    1. Create Signin Form
+    2. Add Email and Password
+    3. Add Signin Button

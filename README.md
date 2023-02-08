@@ -88,6 +88,12 @@
     2. Check count in stock in backend
 
 16. Create Cart Screen
+
     1. Create 2 Columns
     2. Display Items List
     3. Create Action Column
+
+17. Complete Cart Screen
+    1. Click Handler for inc/dec item
+    2. Click Handler for Removing Item
+    3. Click Handler for Checkout

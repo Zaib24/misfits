@@ -119,6 +119,12 @@
     5. Seed Sample Product
 
 21. Seed Sample Users
+
     1. Create User Model
     2. Seed Sample User
     3. Create User Routes
+
+22. Create SignIn Backend API
+    1. Create Sign In API
+    2. NPM Install jsonwebtoken
+    3. Define GenerateToken

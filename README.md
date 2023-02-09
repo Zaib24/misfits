@@ -106,5 +106,13 @@
     3. Add Signin Button
 
 19. Connect MongoDB
+
     1. Install local MongoDB database
     2. Connect to MongoDB
+
+20. Seed Sample Data
+    1. Create Product Model
+    2. Create User Model
+    3. Create Seed Route
+    4. Use Route in Server.js
+    5. Seed Sample Product

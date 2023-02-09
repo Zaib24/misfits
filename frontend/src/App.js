@@ -22,11 +22,13 @@ function App() {
           <Navbar bg="dark" variant="dark">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>Misfits</Navbar.Brand>
+                <Navbar.Brand className="heading">
+                  <i class="fa fa-shirtsinbulk" aria-hidden="true"></i> Misfits
+                </Navbar.Brand>
               </LinkContainer>
               <Nav className="me-auto">
                 <Link to="/cart" className="nav-link">
-                  Cart
+                  <i class="fa fa-cart-plus" aria-hidden="true"></i> Cart{' '}
                   {cart.cartItems.length > 0 && (
                     <Badge pill bg="danger">
                       {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}

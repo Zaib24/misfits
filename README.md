@@ -111,8 +111,14 @@
     2. Connect to MongoDB
 
 20. Seed Sample Data
+
     1. Create Product Model
     2. Create User Model
     3. Create Seed Route
     4. Use Route in Server.js
     5. Seed Sample Product
+
+21. Seed Sample Users
+    1. Create User Model
+    2. Seed Sample User
+    3. Create User Routes

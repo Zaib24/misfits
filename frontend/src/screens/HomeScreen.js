@@ -7,6 +7,8 @@ import Product from '../components/Product';
 import { Helmet } from 'react-helmet-async';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // Define requests
 const reducer = (state, action) => {
   switch (action.type) {
@@ -47,7 +49,9 @@ function HomeScreen() {
       <Helmet>
         <title>Misfits</title>
       </Helmet>
+
       <h1 className="mt-2 mb-3">Featured Products</h1>
+      <ToastContainer position="top-center" limit={1} />
       <div className="products">
         {loading ? (
           <LoadingBox />

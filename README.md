@@ -125,6 +125,12 @@
     3. Create User Routes
 
 22. Create SignIn Backend API
+
     1. Create Sign In API
     2. NPM Install jsonwebtoken
     3. Define GenerateToken
+
+23. Complete Sign In Screen
+    1. Handle Submit Action
+    2. Save Token in Store and Local Storage
+    3. Show User's Name in Header.

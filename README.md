@@ -149,5 +149,11 @@
     3. Create Backend API
 
 26. Implement Select Payment Method Screen
+
     1. Create Input Forms
     2. Handle Submit
+
+27. Create Place Order Screen
+    1. Show cart items, payment and address
+    2. Handle Product Order Action
+    3. Create Order create API

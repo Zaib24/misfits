@@ -137,6 +137,12 @@
     3. Show User's Name in Header.
 
 24. Create Shipping Screen
+
     1. Create Form Input
     2. Handle Save Shipping Address
     3. Add Checkout Wizard Bar
+
+25. Create Sign Up Screen
+    1. Create Input Forms
+    2. Handle Submit
+    3. Create Backend API

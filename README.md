@@ -143,6 +143,11 @@
     3. Add Checkout Wizard Bar
 
 25. Create Sign Up Screen
+
     1. Create Input Forms
     2. Handle Submit
     3. Create Backend API
+
+26. Implement Select Payment Method Screen
+    1. Create Input Forms
+    2. Handle Submit

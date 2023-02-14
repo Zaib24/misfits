@@ -154,6 +154,11 @@
     2. Handle Submit
 
 27. Create Place Order Screen
+
     1. Show cart items, payment and address
     2. Handle Product Order Action
     3. Create Order create API
+
+28. Implement Place Order Action
+    1. Handle Place Order Action
+    2. Create Order created API

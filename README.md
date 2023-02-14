@@ -160,5 +160,11 @@
     3. Create Order create API
 
 28. Implement Place Order Action
+
     1. Handle Place Order Action
     2. Create Order created API
+
+29. Create Order Screen
+    1. Create Backend API for order/:id
+    2. Fetch Order API in frontend
+    3. Show Order Information in 2 columns

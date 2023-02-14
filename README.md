@@ -131,6 +131,12 @@
     3. Define GenerateToken
 
 23. Complete Sign In Screen
+
     1. Handle Submit Action
     2. Save Token in Store and Local Storage
     3. Show User's Name in Header.
+
+24. Create Shipping Screen
+    1. Create Form Input
+    2. Handle Save Shipping Address
+    3. Add Checkout Wizard Bar

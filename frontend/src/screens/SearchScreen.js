@@ -132,13 +132,13 @@ function SearchScreen() {
         <title>Search Products</title>
       </Helmet>
       <Row>
-        <Col md={3}>
+        <Col md={3} className="white">
           <h3>Department</h3>
           <div>
             <ul>
               <li>
                 <Link
-                  className={'all' === category ? 'text-bold' : ''}
+                  className={'all' === category ? 'text-bold text-dark' : ''}
                   to={getFilterUrl({ category: 'all' })}
                 >
                   Any
@@ -147,7 +147,7 @@ function SearchScreen() {
               {categories.map((c) => (
                 <li key={c}>
                   <Link
-                    className={c === category ? 'text-bold' : ''}
+                    className={c === category ? 'text-bold' : 'text-dark'}
                     to={getFilterUrl({ category: c })}
                   >
                     {c}
@@ -161,7 +161,7 @@ function SearchScreen() {
             <ul>
               <li>
                 <Link
-                  className={'all' === price ? 'text-bold' : ''}
+                  className={'all' === price ? 'text-bold text-dark' : ''}
                   to={getFilterUrl({ price: 'all' })}
                 >
                   Any
@@ -171,7 +171,7 @@ function SearchScreen() {
                 <li key={p.value}>
                   <Link
                     to={getFilterUrl({ price: p.value })}
-                    className={p.value === price ? 'text-bold' : ''}
+                    className={p.value === price ? 'text-bold' : 'text-dark'}
                   >
                     {p.name}
                   </Link>
@@ -212,7 +212,7 @@ function SearchScreen() {
             <>
               <Row className="justify-content-between mb-3">
                 <Col md={6}>
-                  <div>
+                  <div className="white">
                     {countProducts === 0 ? 'No' : countProducts} Results
                     {query !== 'all' && ' : ' + query}
                     {category !== 'all' && ' : ' + category}
@@ -231,7 +231,7 @@ function SearchScreen() {
                     ) : null}
                   </div>
                 </Col>
-                <Col className="text-end">
+                <Col className="text-end white">
                   Sort By{' '}
                   <select
                     value={order}

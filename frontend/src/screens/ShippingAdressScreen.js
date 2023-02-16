@@ -60,7 +60,7 @@ function ShippingAdressScreen() {
       </Helmet>
       <CheckoutSteps step1 step2></CheckoutSteps>
       <div className="container container-small">
-        <h1 className="my-3">Shipping Address</h1>
+        <h1 className="my-3 white">Shipping Address</h1>
         <Form onSubmit={submitHandler}>
           <Form.Group className="mb-3" controlId="fullName">
             <Form.Label>Enter Full Name</Form.Label>

@@ -35,7 +35,7 @@ function PaymentMethodScreen() {
         <Helmet>
           <title>Payment Method</title>
         </Helmet>
-        <h1 className="my-3">Payment Method</h1>
+        <h1 className="my-3 white">Payment Method</h1>
         <Form onSubmit={submitHandler}>
           <div className="mb-3">
             <Form.Check
@@ -43,6 +43,7 @@ function PaymentMethodScreen() {
               id="PayPal"
               label="PayPal"
               value="PayPal"
+              className="white"
               checked={paymentMethodName === 'PayPal'}
               onChange={(e) => setPaymentMethod(e.target.value)}
             />
@@ -54,6 +55,7 @@ function PaymentMethodScreen() {
               id="Stripe"
               label="Stripe"
               value="Stripe"
+              className="white"
               checked={paymentMethodName === 'Stripe'}
               onChange={(e) => setPaymentMethod(e.target.value)}
             />

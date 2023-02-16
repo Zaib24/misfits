@@ -75,14 +75,16 @@ function App() {
               >
                 <i className="fas fa-bars"></i>
               </Button>
-              <LinkContainer to="/">
-                <Navbar.Brand className="heading">
-                  <i class="fa fa-shirtsinbulk" aria-hidden="true"></i> Misfits
-                </Navbar.Brand>
-              </LinkContainer>
+
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
-                <SearchBox />
+                <LinkContainer className="header" to="/">
+                  <Navbar.Brand className="heading">
+                    <i class="fa fa-shirtsinbulk" aria-hidden="true"></i>{' '}
+                    Misfits
+                  </Navbar.Brand>
+                </LinkContainer>
+
                 <Nav className="me-auto w-100 justify-content-end">
                   <Link to="/cart" className="nav-link">
                     <i class="fa fa-cart-plus" aria-hidden="true"></i> Cart{' '}
@@ -116,6 +118,7 @@ function App() {
                   )}
                 </Nav>
               </Navbar.Collapse>
+              <SearchBox />
             </Container>
           </Navbar>
         </header>
@@ -128,21 +131,28 @@ function App() {
         >
           <Nav className="flex-column text-white w-100 p-2">
             <Nav.Item>
-              <strong>Categories</strong>
+              <strong className="cat">Categories</strong>
             </Nav.Item>
             {categories.map((category) => (
               <Nav.Item key={category}>
-                <LinkContainer
-                  to={`/search/category=${category}`}
+                <Link
+                  to={`/search?category=${category}`}
                   onClick={() => setSidebarIsOpen(false)}
                 >
-                  <p className="tags">{category}</p>
-                </LinkContainer>
+                  <p className="tags text-success">{category}</p>
+                </Link>
               </Nav.Item>
             ))}
           </Nav>
         </div>
         <main>
+          <body>
+            <div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+            </div>
+          </body>
           <Container className="mt-3">
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
@@ -161,7 +171,7 @@ function App() {
           </Container>
         </main>
         <footer>
-          <div className="text-center">All Rights Reserved.</div>
+          <div className="text-center">All Rights Reserved. ZayB</div>
         </footer>
       </div>
     </BrowserRouter>

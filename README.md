@@ -189,7 +189,18 @@
     3. Use API in the backend
 
 32. Create Profile Screen
+
     1. Get User Info from Context
     2. Show User Information
     3. Create User Update API
     4. Update User Info
+
+33. Add SideBar and Search Box
+
+    1. add Sidebar
+    2. add search box
+
+34. Create Search Screen
+    1. Show Filters
+    2. Create API for searching Products
+    3. Display Results

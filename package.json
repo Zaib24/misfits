@@ -1,0 +1,21 @@
+{
+  "name": "misfits",
+  "version": "1.0.0",
+  "description": "1. Introductions",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zaib24/misfits.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zaib24/misfits/issues"
+  },
+  "homepage": "https://github.com/Zaib24/misfits#readme"
+}

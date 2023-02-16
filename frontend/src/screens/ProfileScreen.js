@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import { toast } from 'react-toastify';
 import { getError } from '../Utils';
 import axios from 'axios';
+import LoadingBox from '../components/LoadingBox';
 
 // Defining Reducer
 const reducer = (state, action) => {
@@ -39,6 +40,10 @@ function ProfileScreen() {
   //   To Handle Form Inputs
   const submitHandler = async (e) => {
     e.preventDefault();
+    if (password !== confirmPassword) {
+      toast.error('Passwords do not match');
+      return;
+    }
     try {
       const { data } = await axios.put(
         '/api/users/profile',
@@ -75,7 +80,6 @@ function ProfileScreen() {
             required
           />
         </Form.Group>
-
         <Form.Group className="mb-3" controlId="email">
           <Form.Label>Email</Form.Label>
           <Form.Control
@@ -85,7 +89,6 @@ function ProfileScreen() {
             required
           />
         </Form.Group>
-
         <Form.Group className="mb-3" controlId="password">
           <Form.Label>Password</Form.Label>
           <Form.Control
@@ -94,7 +97,6 @@ function ProfileScreen() {
             required
           />
         </Form.Group>
-
         <Form.Group className="mb-3" controlId="password">
           <Form.Label>Confirm Password</Form.Label>
           <Form.Control
@@ -108,6 +110,7 @@ function ProfileScreen() {
             Update
           </Button>
         </div>
+        {loadingUpdate && <LoadingBox></LoadingBox>}
       </Form>
     </div>
   );
